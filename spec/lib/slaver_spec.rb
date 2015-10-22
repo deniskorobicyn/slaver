@@ -86,13 +86,13 @@ describe Slaver do
         end
       end
 
-      it 'yeilds only for one model' do
+      it 'yeilds independent of model' do
         Foo.within(:other) do
           Bar.create
         end
 
-        expect(Bar.on(:other).count).to eq 0
-        expect(Bar.count).to eq 1
+        expect(Bar.on(:other).count).to eq 1
+        expect(Bar.count).to eq 0
       end
 
       it 'works with multiple queries' do

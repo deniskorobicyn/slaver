@@ -1,11 +1,12 @@
 module Slaver
   class Proxy
-    attr_accessor :klass
-    attr_reader :connection_pool
+    include Singleton
 
-    def init(klass, config)
+    attr_reader :connection_pool, :klass
+
+    def for_config(klass, config_name)
       @klass = klass
-      @connection_pool = klass.pools[config]
+      @connection_pool = klass.pools[config_name]
 
       self
     end
