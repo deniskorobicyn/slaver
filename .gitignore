@@ -11,3 +11,4 @@ gemfiles/
 spec/internal/config/database.yml
 spec/internal/test_other
 spec/internal/test
+*.gem
