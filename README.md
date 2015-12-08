@@ -6,7 +6,7 @@ Welcome to slaver!
 
 It's a simple gem for rails application within multi-database environment.
 It allows you to change your current connection to other database configuration.
-Some ideas was inspired by [octopus](https://github.com/tchandy/octopus).
+Some ideas was inspired by [octopus](https://github.com/tchandy/octopus). You will like it!!
 
 ## WARNING
 
